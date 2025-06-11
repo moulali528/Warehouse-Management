@@ -1,0 +1,53 @@
+# python -m venv env
+
+fastapi
+uvicorn
+psycopg2-binary
+sqlalchemy
+passlib # password hasing
+bcrypt==4.0.1
+
+# Middel ware package 
+    # pip install fastapi[all]
+
+
+# Front end requirements
+
+#create vite app
+    # npm create vite@latest
+
+
+#install ReactQuery
+    # npm i @tanstack/react-query
+
+#install ReactIcons
+    # npm install react-icons --save
+
+
+#install material UI
+    # npm install @mui/material @emotion/react @emotion/styled
+
+
+# SQL queries
+    #Create a Table
+
+    # CREATE TABLE users (
+    #     id SERIAL PRIMARY KEY,
+    #     email VARCHAR(255) UNIQUE NOT NULL,
+    #     username VARCHAR(50) NOT NULL,
+    #     first_name VARCHAR(50),
+    #     last_name VARCHAR(50),
+    #     hashed_password VARCHAR(255) NOT NULL,
+    #     is_active BOOLEAN DEFAULT TRUE,
+    #     role VARCHAR(50),
+    #     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    # );
+
+    # Insert Values 
+
+    #     INSERT INTO users (email, username, first_name, last_name, hashed_password, is_active, role)
+    # VALUES 
+    # ('john.doe@example.com', 'johndoe', 'John', 'Doe', 'hashedpassword123', TRUE, 'admin'),
+    # ('jane.smith@example.com', 'janesmith', 'Jane', 'Smith', 'hashedpassword456', FALSE, 'user');
+
+
